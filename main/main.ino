@@ -1,6 +1,3 @@
-//TODO : Macro uri pentru leduri 1-8 pe PORTD
-//TODO : Macro uri pentru butoane pe PORTB
-//TODO : Fisiere separate: functii, header, main
 #include "header.h"
 void setup() {
   // put your setup code here, to run once:
@@ -9,6 +6,9 @@ void setup() {
   task1_setup();
   task2_setup();
   task3_setup();
+  task4_setup();
+  task5_setup();
+  task6_setup();
 }
 
 
@@ -18,4 +18,8 @@ void loop() {
   // put your main code here, to run repeatedly:
   task1();
   task2();
+  task6();
+  uint32_t cv = 1000000;
+  while(cv--);
+  cv = 1000000000;
 }
